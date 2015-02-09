@@ -16,12 +16,10 @@
 }
 
 - (BOOL) number:(NSNumber *)number1 isTheSameAsNumber:(NSNumber *)number2 {
-    /* WORK HERE */
     return ([number1 isEqualToNumber:number2]);
 }
 
 - (BOOL) integer:(NSInteger)integer1 isGreaterThan:(NSInteger)integer2 {
-    /* WORK HERE */
     return (integer1 > integer2);
 }
 
