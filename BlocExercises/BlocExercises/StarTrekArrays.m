@@ -20,8 +20,7 @@
 
 
 - (NSString *) stringOfStarTrekCharactersFromArray:(NSArray *)characterArray {
-    NSArray *mutableArray = characterArray;
-    NSString *returnString = [mutableArray componentsJoinedByString:@";"];
+    NSString *returnString = [characterArray componentsJoinedByString:@";"];
     return returnString;
 }
 
