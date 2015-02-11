@@ -12,14 +12,18 @@
 
 - (void) rememberThisArrayForLater:(NSMutableArray *)arrayToRemember {
     /* WORK HERE */
+    //self.String = @"my string";
+   // myRememberedArray = arrayToRemember;
 }
 
 - (void) copyThisArrayForLater:(NSMutableArray *)arrayToCopy {
     /* WORK HERE */
+   // myCopiedArray
 }
 
 - (void) rememberThisFloatForLater:(CGFloat)floatToRemember {
     /* WORK HERE */
+    //myRememberedFloat = floatToRemember
 }
 
 - (NSMutableArray *) arrayYouShouldRemember {

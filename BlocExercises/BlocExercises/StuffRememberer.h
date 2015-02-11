@@ -10,6 +10,8 @@
 
 @interface StuffRememberer : NSObject
 
+// example
+@property (nonatomic, strong) NSString *string;
 /*
  
  In this class, there are three pairs of methods.

@@ -11,6 +11,7 @@
 
 @interface StuffRemembererTests : XCTestCase
 
+
 @property (nonatomic, strong) StuffRememberer *rememberer;
 
 @end
