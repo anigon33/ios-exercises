@@ -76,15 +76,11 @@ let myString = "string"
 let characters = [worf, picard]
 
 func favoriteDrinksArrayForCharacters(characters:Array<Dictionary<String, String>>) -> Array<String> {
-    var myArray:[String]
-    for mydictionary in characters {
-        var favoriteDrink = mydictionary["favorite drink"]
-        myArray.append(favoriteDrink!)
+  
+    
     }
-    return myArray
-}
 
-println(favoriteDrinksArrayForCharacters(characters))
+
 
     // return an array of favorite drinks, like ["prune juice", "tea, Earl Grey, hot"]
     // WORK HERE
