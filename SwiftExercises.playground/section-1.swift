@@ -7,11 +7,13 @@ Strings
 */
 
 func favoriteCheeseStringWithCheese(cheese: String) -> String {
-    // WORK HERE
-    return cheese
+    
+    return cheese;
 }
 
 let fullSentence = favoriteCheeseStringWithCheese("cheddar")
+let favoriteCheeseString = "My Favorite cheese is "
+favoriteCheeseString + fullSentence
 // Make fullSentence say "My favorite cheese is cheddar."
 
 /*
@@ -21,10 +23,14 @@ Arrays & Dictionaries
 */
 
 let numberArray = [1, 2, 3, 4]
+numberArray + [5]
+
 // Add 5 to this array
 // WORK HERE
 
-let numberDictionary = [1 : "one", 2 : "two", 3 : "three", 4 : "four"]
+var numberDictionary = [1 : "one", 2 : "two", 3 : "three", 4 : "four"]
+numberDictionary[5] = "five"
+numberDictionary
 // Add 5 : "five" to this dictionary
 // WORK HERE
 
@@ -33,9 +39,18 @@ let numberDictionary = [1 : "one", 2 : "two", 3 : "three", 4 : "four"]
 Loops
 
 */
-
 // Use a closed range loop to print 1 - 10, inclusively
+
+for index in 1...10 {
+    print("\(index)")
+    
+}
+
+
 // WORK HERE
+for index in 1..<10 {
+      index
+}
 
 // Use a half-closed range loop to print 1 - 10, inclusively
 // WORK HERE
@@ -53,17 +68,26 @@ let picard = [
     "information": "Captain of the USS Enterprise",
     "favorite drink": "tea, Earl Grey, hot"]
 
+let myString = "string"
+//println(string)
+
+
+
 let characters = [worf, picard]
 
 func favoriteDrinksArrayForCharacters(characters:Array<Dictionary<String, String>>) -> Array<String> {
-    // return an array of favorite drinks, like ["prune juice", "tea, Earl Grey, hot"]
-    // WORK HERE
-    return []
+    var myArray:[String]
+    for mydictionary in characters {
+        var favoriteDrink = mydictionary["favorite drink"]
+        myArray.append(favoriteDrink!)
+    }
+    return myArray
 }
 
-let favoriteDrinks = favoriteDrinksArrayForCharacters(characters)
+println(favoriteDrinksArrayForCharacters(characters))
 
-favoriteDrinks
+    // return an array of favorite drinks, like ["prune juice", "tea, Earl Grey, hot"]
+    // WORK HERE
 
 /*
 
@@ -89,3 +113,4 @@ let cerealArray = ["Golden Grahams", "Cheerios", "Trix", "Cap'n Crunch OOPS! All
 
 // Use a closure to sort this array alphabetically
 // WORK HERE
+
